@@ -1,0 +1,26 @@
+{
+  "name": "eliteshop-ecommerce-platform",
+  "version": "1.0.0",
+  "description": "A premium, professional eCommerce platform",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "live-server --port=3000 --host=0.0.0.0",
+    "build": "echo 'Building production assets...'",
+    "install-deps": "npm install && cd server && npm install",
+    "setup": "npm run install-deps"
+  },
+  "keywords": ["ecommerce", "nodejs", "express", "mongodb", "tailwind", "professional"],
+  "author": "Professional Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
